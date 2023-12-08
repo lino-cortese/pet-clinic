@@ -24,5 +24,5 @@ jobs:
       run: |
         mvn package
         docker build --tag linocortese/pet-clinic/pet-clinic:latest -f Dockerfile .
-        echo ${{secrets.password}} | docker login -u 'linocortese' --password-stdin
+        echo ${{ secrets.password }} | docker login -u 'linocortese' --password-stdin
         docker push linocortese/pet-clinic/pet-clinic:latest
