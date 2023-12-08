@@ -23,4 +23,4 @@ jobs:
     - name: Compile, build and push
       run: |
         mvn package
-        docker build --tag linocortese/pet-clinic/pet-clinic:latest -f Dockerfile
+        docker build --tag linocortese/pet-clinic/pet-clinic:latest -f Dockerfile .
